@@ -5,6 +5,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MarkenPage } from '../pages/marken/marken';
+import { GeschmackPage } from '../pages/geschmack/geschmack';
+import { SortenPage } from '../pages/sorten/sorten';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,7 +17,9 @@ import { HttpModule } from '@angular/http';
   declarations: [
     MyApp,
     HomePage,
-    MarkenPage
+    MarkenPage,
+    GeschmackPage,
+    SortenPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,9 @@ import { HttpModule } from '@angular/http';
   entryComponents: [
     MyApp,
     HomePage,
-    MarkenPage
+    MarkenPage,
+    GeschmackPage,
+    SortenPage
   ],
   providers: [
     StatusBar,

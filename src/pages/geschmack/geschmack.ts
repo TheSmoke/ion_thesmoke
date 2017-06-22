@@ -6,20 +6,20 @@ import 'rxjs/add/operator/map';
 
 
 @Component({
-  selector: 'page-marken',
-  templateUrl: 'marken.html'
+  selector: 'page-geschmack',
+  templateUrl: 'geschmack.html'
 })
-export class MarkenPage {
+export class GeschmackPage {
 
-  dataMarken: any;
+  dataGeschmack: any;
 
   constructor(public navCtrl: NavController, public http: Http) {
 
 
     this.http
-        .get('http://www.thesmoke.de/api/rest.php/marken')
+        .get('https://www.thesmoke.de/api/rest.php/geschmack')
         .map(res => res.json())
-        .subscribe(result => {this.dataMarken=result;});
+        .subscribe(result => {this.dataGeschmack=result;});
 
   }
 }

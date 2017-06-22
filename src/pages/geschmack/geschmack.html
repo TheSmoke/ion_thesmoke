@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Geschmack</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid>
+		<ion-row>
+    		<ion-col>
+      			ID
+    		</ion-col>
+    		<ion-col>
+				GESCHMACK
+    		</ion-col>
+  		</ion-row>
+	</ion-grid>
+
+
+
+	<ion-grid>
+		<ion-row>
+  			<ion-item text-wrap *ngFor="let item of dataGeschmack" >
+	    		<ion-col>
+	      			{{item.id}}
+	    		</ion-col>
+	    		<ion-col>
+					{{item.geschmack}}
+	    		</ion-col>
+    		</ion-item>
+  		</ion-row>
+	</ion-grid>
+</ion-content>
