@@ -1,3 +1,23 @@
 page-home {
 
+#background{
+	background-color: #1ab091;
+	opacity: 0.5;
+}
+
+#navbar{
+	background-color: #1ab091;
+	border: 0;
+}
+
+#navlogo{
+	background-image: url(../assets/image/logo-nav.png);
+	background-repeat: no-repeat;
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	opacity: 0.9;
+}
 }
